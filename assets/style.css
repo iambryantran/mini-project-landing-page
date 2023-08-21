@@ -1,0 +1,85 @@
+/* TODO: */
+/*
+Header needs to stay at the top of the page - DONE
+3 colors in design
+Single font and font family for all text - DONE
+At least 2 <h#>s
+Header contains nav bar with 3 links that display inline, with contact link
+Contact link click jumps to contact form
+Contact for includes "input" elements for name and email
+Image includes an alt - DONE
+Page is deployed to GitHub
+*/
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+body {
+    background-color: rgb(55, 178, 219);
+}
+
+header, footer {
+    background-color: darkblue;
+    width: 100%;
+    height: auto; 
+    padding: 20px;
+}
+
+header {
+    position: sticky;
+}
+
+footer {
+    position: static;
+    margin-top: 100%;
+}
+
+nav {
+    position: fixed;
+    background-color: rgb(37, 139, 0);
+    width: 100%;
+    height: 50px; 
+    top: 0px;
+    left: 0px;
+    border: solid black;
+}
+
+nav a {
+    float: right;
+    display: inline;
+    position: relative;
+    list-style-type: none;
+    padding-right: 50px;
+    text-decoration: none;
+    border: solid black;
+}
+
+#headshot {
+    display: block;
+    max-height: 10%;
+    max-width: 10%;
+    margin: auto;
+}
+
+#contact-section {
+    border: solid black;
+    margin: auto;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 150px;
+    text-align: center;
+}
+
+#contact-box {
+    display: block;
+    text-align: left;
+    position: relative;
+    width: 50%;
+    margin: auto;
+    padding-top: 10px;
+}
