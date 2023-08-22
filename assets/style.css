@@ -1,12 +1,12 @@
 /* TODO: */
 /*
 Header needs to stay at the top of the page - DONE
-3 colors in design
+3 colors in design - DONE
 Single font and font family for all text - DONE
-At least 2 <h#>s
-Header contains nav bar with 3 links that display inline, with contact link
-Contact link click jumps to contact form
-Contact for includes "input" elements for name and email
+At least 2 <h#>s - DONE
+Header contains nav bar with 3 links that display inline, with contact link - DONE
+Contact link click jumps to contact form - DONE
+Contact for includes "input" elements for name and email - DONE
 Image includes an alt - DONE
 Page is deployed to GitHub
 */
@@ -22,23 +22,16 @@ body {
     background-color: rgb(55, 178, 219);
 }
 
-header, footer {
+footer {
     background-color: darkblue;
     width: 100%;
     height: auto; 
     padding: 20px;
+    display:flex;
+    align-items: end;
 }
 
 header {
-    position: sticky;
-}
-
-footer {
-    position: static;
-    margin-top: 100%;
-}
-
-nav {
     position: fixed;
     background-color: rgb(37, 139, 0);
     width: 100%;
@@ -52,27 +45,36 @@ nav a {
     float: right;
     display: inline;
     position: relative;
+    bottom: 10px;
     list-style-type: none;
     padding-right: 50px;
     text-decoration: none;
-    border: solid black;
+}
+
+#main-section {
+    display: flex;
+    height: 900px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #headshot {
-    display: block;
-    max-height: 10%;
-    max-width: 10%;
-    margin: auto;
+    height: 200px;
+    width: 200px;
+    align-self: center;
+    margin-bottom: 50px;
 }
 
 #contact-section {
     border: solid black;
     margin: auto;
-    position: absolute;
     bottom: 0px;
     width: 100%;
-    height: 150px;
-    text-align: center;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 #contact-box {
